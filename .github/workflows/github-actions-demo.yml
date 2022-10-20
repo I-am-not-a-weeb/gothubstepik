@@ -1,0 +1,5 @@
+name: fajnosc
+run-name: ${{ github.actor}} jazdaaa
+on: [commit]
+jobs:
+  run: python3 commit.py
