@@ -1,5 +1,11 @@
 name: fajnosc
 run-name: ${{ github.actor}} jazdaaa
-on: [commit]
+on: 
+  push:
+    branches: [master]
 jobs:
-  run: python3 commit.py
+  build:
+    runs-on: ubuntu-latest
+    steps:
+        - run: python3 -m pytest tests.py
+  
