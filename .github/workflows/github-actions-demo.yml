@@ -13,5 +13,5 @@ jobs:
           python-version: "3.x"
       - name: install
         run: |
-          pip install pytest
+          pip install -U pytest
       - run: python3 -m pytest tests.py
